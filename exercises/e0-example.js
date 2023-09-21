@@ -5,13 +5,10 @@ import { data } from "../data/data";
 // Return example: 'Planet Name'
 
 export function getFirstPlanetName(data) {
-  // Your code goes here...
-  const planets = data.planets;
-  //console.log(planets);
-  return planets[0].name;
+  let planet = data.planets;
+  return planet[0].name;
 }
 
-initial commit
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-0"

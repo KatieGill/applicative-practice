@@ -5,7 +5,11 @@ import { data } from "../data/data";
 // Return example: ['name1', 'name2', ... , 'nameN']
 
 export function getPlanetNames(data) {
-  // Your code goes here...
+  const planetNames = [];
+  data.planets.map(function(planets) {
+    planetNames.push(planets.name);
+  });
+  return planetNames;
 }
 
 

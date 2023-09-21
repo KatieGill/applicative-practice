@@ -5,8 +5,17 @@ import { data } from "../data/data";
 // Return example: 'Planet Name'
 
 export function findPlanetNameByMoon(data, moonName) {
-  // Your code goes here...
-}
+    return data.planets
+    .filter(function(planetObj) {
+      return planetObj.moons;
+    })
+    .find(function(planetObj) {
+      return planetObj.moons.includes(moonName);
+    }).name;
+  }
+
+  
+  
 
 
 
