@@ -5,8 +5,7 @@ import { data } from "../data/data";
 // Return example: 'Planet Name'
 
 export function getFirstPlanetName(data) {
-  let planet = data.planets;
-  return planet[0].name;
+  return data.planets[0].name;
 }
 
 

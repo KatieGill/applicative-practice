@@ -6,12 +6,8 @@ import { data } from "../data/data";
 
 export function findPlanetNameByMoon(data, moonName) {
     return data.planets
-    .filter(function(planetObj) {
-      return planetObj.moons;
-    })
-    .find(function(planetObj) {
-      return planetObj.moons.includes(moonName);
-    }).name;
+    .filter((planet) => planet.moons)
+    .find((planet) => planet.moons.includes(moonName)).name;
   }
 
   
